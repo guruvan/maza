@@ -18,7 +18,7 @@ packages:
 - "g++-mingw-w64"
 - "nsis"
 - "zip"
-reference_datetime: "2013-06-01 00:00:00"
+reference_datetime: "2016-02-01 00:00:00"
 remotes:
 - "url": "https://github.com/mazacoin/maza.git"
   "dir": "maza"
@@ -91,7 +91,7 @@ script: |
   for i in ${HOSTS}; do
     export PATH=${BASEPREFIX}/${i}/native/bin:${ORIGPATH}
     mkdir -p distsrc-${i}
-    cd ditsrc-${i}
+    cd distsrc-${i}
     INSTALLPATH=`pwd`/installed/${DISTNAME}
     mkdir -p ${INSTALLPATH}
     tar --strip-components=1 -xf ../$SOURCEDIST
