@@ -91,7 +91,7 @@ script: |
   for i in ${HOSTS}; do
     export PATH=${BASEPREFIX}/${i}/native/bin:${ORIGPATH}
     mkdir -p distsrc-${i}
-    cd ditsrc-${i}
+    cd distsrc-${i}
     INSTALLPATH=`pwd`/installed/${DISTNAME}
     mkdir -p ${INSTALLPATH}
     tar --strip-components=1 -xf ../$SOURCEDIST
