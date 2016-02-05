@@ -7,6 +7,6 @@ Comment[tr]=MAZA, eşten eşe kriptografik sanal para birimi
 Exec=maza-qt %u
 Terminal=false
 Type=Application
-Icon=maza128
+Icon=bitcoin128
 MimeType=x-scheme-handler/maza;
 Categories=Office;Finance;
