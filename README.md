@@ -5,11 +5,40 @@
 Maza Core integration/staging tree
 =====================================
 
+[![Build Status](https://travis-ci.org/MazaCoin/maza.svg?branch=master)](https://travis-ci.org/MazaCoin/maza)
+
+
+## MAZA v0.10.2
+ - Freshly re-forked form bitcoin upstream enhance mergeability, readability, remove unneeded Zetacoin code 
+ - Rebranded MAZA form Mazacoin. 
+ - Operators of certain applications (insight, other block explorers) that rely on 
+   linear storage of blocks in blk.dat files may require modification, or to use RPC calls instead.  
+
+
+### New Release process
+  - We are updating our release process to include distribution via IPFS
+  - Beginning with v0.10.2 final releases will have GPG signatures from 
+    developers using gitian build systems
+  - Binary release files will be available through IPFS, at a well posted hash
+    Hash will be posted to [mazacoin.org](https://mazacoin.org), DNS, IRC, github
+    Mazacoin.org will also maintain an HTTPS <-> IPFS Gateway
+    It is recommended that all users check GPG, sha sums, and IPFS hash before installing
+
+
+Development Process
+------------------
+ - Beginning with v0.10.2 MAZA Development will follow a general git flow model
+ - PRs to Master Branch are only accepted from Develop Branch
+ - Developers work on their own trees, Pull Requests are submitted to Develop Branch
+ - Releases are made by creating a release/vM.m.r branch 
+ - Completed releases are merged to Master and develop, and a tag for the version number is made
+
+
+
 
 Bitcoin ORIGINAL Readme:
 ========================
 
-[![Build Status](https://travis-ci.org/bitcoin/bitcoin.svg?branch=master)](https://travis-ci.org/bitcoin/bitcoin)
 
 https://www.bitcoin.org
 
