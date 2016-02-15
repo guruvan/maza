@@ -14,7 +14,7 @@ env:
     - CCACHE_TEMPDIR=/tmp/.ccache-temp
     - CCACHE_COMPRESS=1
     - BASE_OUTDIR=$TRAVIS_BUILD_DIR/out
-    - SDK_URL=https://s3-us-west-2.amazonaws.com/downloads.maza.club/
+    - SDK_URL=https://s3-us-west-2.amazonaws.com/downloads.maza.club
 cache:
   apt: true
   directories:
