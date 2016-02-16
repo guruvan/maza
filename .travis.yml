@@ -10,12 +10,6 @@
 
 os: linux
 language: cpp
-cache:
-  apt: true
-  directories:
-  - depends/built
-  - depends/sdk-sources
-  - $HOME/.ccache
 env:
   global:
     - MAKEJOBS=-j3
@@ -26,7 +20,14 @@ env:
     - BASE_OUTDIR=$TRAVIS_BUILD_DIR/out
     - SDK_URL=https://s3-us-west-2.amazonaws.com/downloads.maza.club
     - OSX_SDK=10.9
+cache:
+  apt: true
+  directories:
+  - depends/built
+  - depends/sdk-sources
+  - $HOME/.ccache
 matrix:
+  fast_finish: true
   include:
     - compiler: ": ARM"
       env: HOST=arm-linux-gnueabihf PACKAGES="g++-arm-linux-gnueabihf" DEP_OPTS="NO_QT=1" GOAL="install" BITCOIN_CONFIG="--enable-glibc-back-compat"
